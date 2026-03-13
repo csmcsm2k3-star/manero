@@ -1,0 +1,113 @@
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 2500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-modal {
+    background-color: var(--manero-bg);
+    border: 1px solid var(--manero-gold);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(235, 222, 199, 0.1);
+}
+
+@media (max-width: 600px) {
+    .login-modal {
+        padding: 30px 20px;
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
+
+    .login-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .login-close {
+        top: 10px;
+        right: 10px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.login-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: var(--manero-text-light);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--manero-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.login-btn {
+    margin-top: 10px;
+    padding: 14px;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.gold-link {
+    color: var(--manero-gold);
+    cursor: pointer;
+    text-decoration: underline;
+}
