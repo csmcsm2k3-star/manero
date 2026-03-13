@@ -79,7 +79,7 @@ const Navbar = ({ cartCount, onOpenCart, user, onOpenLogin, onOpenProfile, curre
           <div className="mobile-main-links">
             <button onClick={() => handleNavClick('experience')} className={currentView === 'experience' ? 'active' : ''}>LA EXPERIENCIA</button>
             <button onClick={() => handleNavClick('shop')} className={currentView === 'shop' ? 'active' : ''}>TIENDA</button>
-            <a href="https://barmanero.es" target="_blank" rel="noopener noreferrer">WEB OFICIAL ↗</a>
+            <a href="https://barmanero.es" target="_blank" rel="noopener noreferrer">WEB OFICIAL</a>
           </div>
 
           <div className="mobile-menu-footer">
