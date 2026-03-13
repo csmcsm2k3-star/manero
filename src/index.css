@@ -23,15 +23,30 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-html { touch-action: manipulation; }
+html {
+  touch-action: manipulation;
+  overflow-x: hidden;
+  width: 100%;
+}
 
 body {
   margin: 0;
+  width: 100%;
   min-width: 320px;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior-y: none;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -140,6 +155,7 @@ p { font-family: var(--font-sans); color: var(--manero-text-light); line-height:
 
 /* ─── Hero ─── */
 .hero-section {
+  width: 100%;
   height: 100svh;
   max-height: 680px;
   background: 
